@@ -8,4 +8,6 @@ class AdminKotlinApplication
 
 fun main(args: Array<String>) {
 	runApplication<AdminKotlinApplication>(*args)
+
+	println("test")
 }

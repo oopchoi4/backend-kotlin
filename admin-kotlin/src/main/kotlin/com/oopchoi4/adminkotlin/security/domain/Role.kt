@@ -2,6 +2,7 @@
 
 package com.oopchoi4.adminkotlin.security.domain
 
+import java.time.LocalDateTime
 import javax.persistence.*
 
 @Entity
@@ -12,11 +13,14 @@ class Role(
   val id: Int,
 
   @Column(name = "role_name", updatable = false)
-  var roleName: String? = null,
+  val roleName: String? = null,
 
   @Column(name = "description", updatable = false)
-  var description: String? = null,
+  val description: String? = null,
 
   @ManyToMany(mappedBy = "roles")
-  var users: MutableSet<User>? = null
+  val users: MutableSet<User>? = null,
+
+  val createdAt: LocalDateTime? = LocalDateTime.now(),
+  val updatedAt: LocalDateTime? = LocalDateTime.now()
 )

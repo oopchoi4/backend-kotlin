@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS address(
+    id BIGINT(19) AUTO_INCREMENT PRIMARY KEY,
+    city VARCHAR(255),
+    email VARCHAR(255),
+    enabled BIT,
+    lastModified TIMESTAMP(6),
+    name VARCHAR(255),
+    options LONGTEXT,
+    street VARCHAR(255),
+    tel VARCHAR(255),
+    things LONGTEXT,
+    zip VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)  ENGINE=INNODB;

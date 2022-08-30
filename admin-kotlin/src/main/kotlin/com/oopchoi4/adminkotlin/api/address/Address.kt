@@ -5,36 +5,37 @@ import com.oopchoi4.adminkotlin.toArray
 import com.oopchoi4.adminkotlin.toMap
 import com.oopchoi4.adminkotlin.writeValueAsString
 import java.time.LocalDateTime
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
-import javax.persistence.Lob
+import javax.persistence.*
 
 @Entity
+@Table(name = "address")
 data class Address(
   @Id
   @GeneratedValue
-  var id: Int?,
+  val id: Int?,
 
-  var name: String?,
+  val name: String?,
 
-  var street: String?,
+  val street: String?,
 
-  var zip: String?,
+  val zip: String?,
 
-  var city: String?,
+  val city: String?,
 
-  var email: String?,
+  val email: String?,
 
-  var tel: String?,
+  val tel: String?,
 
-  var enabled: Boolean?,
+  val enabled: Boolean?,
 
-  var lastModified: LocalDateTime?,
+  val lastModified: LocalDateTime?,
 
-  @Lob var options: String?,
+  @Lob val options: String?,
 
-  @Lob var things: String?
+  @Lob val things: String?,
+
+  val createdAt: LocalDateTime? = LocalDateTime.now(),
+  val updatedAt: LocalDateTime? = LocalDateTime.now()
 ) {
   fun toDTO() = AddressDto(
     id,

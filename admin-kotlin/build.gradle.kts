@@ -1,3 +1,4 @@
+import org.gradle.internal.impldep.org.bouncycastle.cms.RecipientId.password
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -14,16 +15,7 @@ group = "com.oopchoi4"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
-apply plugin : "org.flywaydb.flyway"
-
-flyway {
-    url = 'jdbc:mysql://localhost:3306/oopchoi4?ssl-mode=REQUIRED'
-    user = 'oopchoi4'
-    password = 'oopchoi4'
-    schemas = ['oopchoi4']
-}
-
-flywayClean.onlyIf { databaseBaseUrl == "jdbc:mysql://localhost:3306" }
+apply(plugin = "org.flywaydb.flyway")
 
 repositories {
     mavenCentral()
@@ -76,6 +68,20 @@ tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
         jvmTarget = "17"
+    }
+}
+
+flyway {
+    url = "jdbc:mysql://localhost:3306/oopchoi4?ssl-mode=REQUIRED"
+    user = "oopchoi4"
+    password = "oopchoi4"
+}
+
+val databaseBaseUrl = "jdbc:mysql://localhost:3306"
+tasks.flywayClean {
+//    enabled = false
+    onlyIf{
+        databaseBaseUrl == "jdbc:mysql://localhost:3306"
     }
 }
 

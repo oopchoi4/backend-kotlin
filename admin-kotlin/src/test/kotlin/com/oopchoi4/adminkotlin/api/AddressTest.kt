@@ -2,6 +2,7 @@ package com.oopchoi4.adminkotlin.api
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
+import com.oopchoi4.adminkotlin.api.address.model.AddressDto
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import org.apache.poi.poifs.filesystem.POIFSFileSystem
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -20,7 +21,6 @@ import org.springframework.http.*
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit.jupiter.SpringExtension
 import org.springframework.util.LinkedMultiValueMap
-import com.oopchoi4.adminkotlin.api.address.domain.dto.AddressDto
 import java.io.ByteArrayInputStream
 
 

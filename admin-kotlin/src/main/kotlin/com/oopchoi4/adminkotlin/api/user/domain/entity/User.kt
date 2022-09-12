@@ -10,19 +10,16 @@ import javax.persistence.*
 class User(
   @Id
   @GeneratedValue
-  val id: Int,
+  val id: Long? = null,
 
   @Column(name = "username", unique = true)
   val username: String? = null,
 
+  @Column(name = "email", unique = true)
+  val email: String? = null,
+
   @Column(name = "password")
   val password: String? = null,
-
-  @Column(name = "first_name")
-  val firstName: String? = null,
-
-  @Column(name = "last_name")
-  val lastName: String? = null,
 
   @ManyToMany(fetch = FetchType.EAGER, cascade = [CascadeType.MERGE])
   @JoinTable(

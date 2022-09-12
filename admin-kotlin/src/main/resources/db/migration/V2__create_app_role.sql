@@ -8,8 +8,7 @@ CREATE TABLE IF NOT EXISTS app_role(
 
 CREATE TABLE IF NOT EXISTS app_user(
     id BIGINT(19) AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(255),
-    last_name VARCHAR(255),
+    email VARCHAR(255),
     password VARCHAR(255),
     username VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

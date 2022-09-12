@@ -1,8 +1,8 @@
 package com.oopchoi4.adminkotlin.api.address
 
-import com.oopchoi4.adminkotlin.api.address.domain.dto.AddressDto
-import com.oopchoi4.adminkotlin.api.address.domain.dto.AddressImportDto
 import com.oopchoi4.adminkotlin.api.address.domain.entity.Address
+import com.oopchoi4.adminkotlin.api.address.model.AddressDto
+import com.oopchoi4.adminkotlin.api.address.model.AddressImportDto
 import org.springframework.core.io.ByteArrayResource
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Component

@@ -1,4 +1,4 @@
-package com.oopchoi4.adminkotlin.security.service
+package com.oopchoi4.adminkotlin.common.service
 
 import com.opencsv.bean.CsvToBeanBuilder
 import org.apache.commons.io.input.BOMInputStream

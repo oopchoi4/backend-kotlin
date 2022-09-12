@@ -1,4 +1,4 @@
-package com.oopchoi4.adminkotlin.api.address
+package com.oopchoi4.adminkotlin.api.address.domain.dto
 
 import java.time.LocalDateTime
 

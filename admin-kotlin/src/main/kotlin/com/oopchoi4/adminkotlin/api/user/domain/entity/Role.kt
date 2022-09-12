@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.oopchoi4.adminkotlin.security.domain
+package com.oopchoi4.adminkotlin.api.user.domain.entity
 
 import java.time.LocalDateTime
 import javax.persistence.*

@@ -16,7 +16,7 @@ import org.springframework.boot.test.web.client.postForEntity
 import org.springframework.http.*
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit.jupiter.SpringExtension
-import com.oopchoi4.adminkotlin.security.service.UserRepository
+import com.oopchoi4.adminkotlin.api.user.UserRepository
 
 @ExtendWith(SpringExtension::class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

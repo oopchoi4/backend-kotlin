@@ -1,7 +1,8 @@
-package com.oopchoi4.adminkotlin.api.address
+package com.oopchoi4.adminkotlin.api.address.domain.dto
 
+import com.oopchoi4.adminkotlin.api.address.domain.entity.Address
 import com.opencsv.bean.CsvBindByName
-import com.oopchoi4.adminkotlin.security.service.CsvImportDto
+import com.oopchoi4.adminkotlin.common.service.CsvImportDto
 import java.time.LocalDateTime
 
 class AddressImportDto : CsvImportDto<Address> {

@@ -14,15 +14,15 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 import com.oopchoi4.adminkotlin.security.JWTAuthenticationFilter
 import com.oopchoi4.adminkotlin.security.JWTAuthorizationFilter
 import com.oopchoi4.adminkotlin.security.TokenProvider
-import com.oopchoi4.adminkotlin.security.service.AppAuthenticationManager
+import com.oopchoi4.adminkotlin.security.AppAuthenticationManager
 
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 class WebConfig(
-  val securityProperties: SecurityProperties,
-  val authenticationManager: AppAuthenticationManager,
-  val tokenProvider: TokenProvider
+    val securityProperties: SecurityProperties,
+    val authenticationManager: AppAuthenticationManager,
+    val tokenProvider: TokenProvider
 ) {
   @Bean
   @Throws(Exception::class)

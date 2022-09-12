@@ -1,5 +1,6 @@
-package com.oopchoi4.adminkotlin.security.service
+package com.oopchoi4.adminkotlin.security
 
+import com.oopchoi4.adminkotlin.api.user.AppUserDetailsService
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.authentication.BadCredentialsException
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken

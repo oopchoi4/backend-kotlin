@@ -1,4 +1,4 @@
-package com.oopchoi4.adminkotlin.security.service
+package com.oopchoi4.adminkotlin.api.user
 
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority

@@ -1,5 +1,6 @@
 package com.oopchoi4.adminkotlin.api.address
 
+import com.oopchoi4.adminkotlin.api.address.domain.dto.AddressDto
 import org.springframework.core.io.ByteArrayResource
 import org.springframework.http.ResponseEntity
 import org.springframework.security.access.prepost.PreAuthorize

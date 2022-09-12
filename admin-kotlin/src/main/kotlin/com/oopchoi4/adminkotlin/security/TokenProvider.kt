@@ -9,15 +9,15 @@ import org.springframework.security.core.userdetails.User
 import org.springframework.stereotype.Component
 import com.oopchoi4.adminkotlin.add
 import com.oopchoi4.adminkotlin.config.SecurityProperties
-import com.oopchoi4.adminkotlin.security.service.AppUserDetailsService
+import com.oopchoi4.adminkotlin.api.user.AppUserDetailsService
 import java.security.Key
 import java.util.*
 import javax.annotation.PostConstruct
 
 @Component
 class TokenProvider(
-  private val securityProperties: SecurityProperties,
-  private val userDetailsService: AppUserDetailsService,
+    private val securityProperties: SecurityProperties,
+    private val userDetailsService: AppUserDetailsService,
 ) {
   private var key: Key? = null
   private var tokenValidity: Date? = null

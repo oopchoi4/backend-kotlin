@@ -1,5 +1,6 @@
-package com.oopchoi4.adminkotlin.api.address
+package com.oopchoi4.adminkotlin.api.address.domain.entity
 
+import com.oopchoi4.adminkotlin.api.address.domain.dto.AddressDto
 import org.hibernate.Hibernate
 import com.oopchoi4.adminkotlin.toArray
 import com.oopchoi4.adminkotlin.toMap

@@ -20,7 +20,7 @@ import org.springframework.http.*
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit.jupiter.SpringExtension
 import org.springframework.util.LinkedMultiValueMap
-import com.oopchoi4.adminkotlin.api.address.AddressDto
+import com.oopchoi4.adminkotlin.api.address.domain.dto.AddressDto
 import java.io.ByteArrayInputStream
 
 
